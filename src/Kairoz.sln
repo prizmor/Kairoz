@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kairoz.Host.Wpf", "Kairoz.Host.Wpf\\Kairoz.Host.Wpf.csproj", "{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kairoz.Core", "Kairoz.Core\\Kairoz.Core.csproj", "{2E8A0B3F-0E39-4E58-B0D5-644823C2B386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kairoz.Plugins", "Kairoz.Plugins\\Kairoz.Plugins.csproj", "{70B41623-C60F-437A-B747-CED779DD34B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins.DemoFeature", "Plugins.DemoFeature\\Plugins.DemoFeature.csproj", "{6099477A-A4BB-4B0D-BC60-C4E0A7B1D03D}"
+EndProject
+Global
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+EndGlobalSection
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+{2E8A0B3F-0E39-4E58-B0D5-644823C2B386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{2E8A0B3F-0E39-4E58-B0D5-644823C2B386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{2E8A0B3F-0E39-4E58-B0D5-644823C2B386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{2E8A0B3F-0E39-4E58-B0D5-644823C2B386}.Release|Any CPU.Build.0 = Release|Any CPU
+{70B41623-C60F-437A-B747-CED779DD34B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{70B41623-C60F-437A-B747-CED779DD34B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{70B41623-C60F-437A-B747-CED779DD34B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{70B41623-C60F-437A-B747-CED779DD34B6}.Release|Any CPU.Build.0 = Release|Any CPU
+{6099477A-A4BB-4B0D-BC60-C4E0A7B1D03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{6099477A-A4BB-4B0D-BC60-C4E0A7B1D03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{6099477A-A4BB-4B0D-BC60-C4E0A7B1D03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{6099477A-A4BB-4B0D-BC60-C4E0A7B1D03D}.Release|Any CPU.Build.0 = Release|Any CPU
+EndGlobalSection
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+EndGlobalSection
+EndGlobal
