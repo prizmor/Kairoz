@@ -1,0 +1,38 @@
+<UserControl x:Class="Kairoz.Host.Wpf.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             Loaded="OnLoaded">
+    <Grid Margin="16">
+        <ui:CardControl Header="Settings">
+            <StackPanel>
+                <TextBlock Text="Capture FPS"
+                           FontWeight="SemiBold"
+                           Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+                <ComboBox ItemsSource="{Binding CaptureFpsOptions}"
+                          SelectedItem="{Binding SelectedCaptureFps, Mode=TwoWay}"
+                          Margin="0,8,0,16">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=., StringFormat={}{0:D} FPS}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <TextBlock Text="UI Scale"
+                           FontWeight="SemiBold"
+                           Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+                <TextBox Text="{Binding UiScale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Margin="0,8,0,16" />
+                <Button Content="Save"
+                        Command="{Binding SaveCommand}"
+                        HorizontalAlignment="Right"
+                        Width="120" />
+            </StackPanel>
+        </ui:CardControl>
+    </Grid>
+</UserControl>
