@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>Kairoz.Host</AssemblyName>
+    <RootNamespace>Kairoz.Host</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="4.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kairoz.Core\Kairoz.Core.csproj" />
+    <ProjectReference Include="..\Kairoz.Plugins\Kairoz.Plugins.csproj" />
+    <ProjectReference Include="..\Plugins.DemoFeature\Plugins.DemoFeature.csproj" />
+  </ItemGroup>
+</Project>
