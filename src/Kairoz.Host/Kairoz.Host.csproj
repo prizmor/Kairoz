@@ -10,7 +10,11 @@
     <RootNamespace>Kairoz.Host</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="WPF-UI" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.10" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.10" />
+    <PackageReference Include="WPF-UI" Version="4.0.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kairoz.Core\Kairoz.Core.csproj" />

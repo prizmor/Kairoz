@@ -1,6 +1,7 @@
 using Kairoz.Plugins;
 using Microsoft.Extensions.DependencyInjection;
 using Plugins.DemoFeature.Views;
+using System;
 
 namespace Plugins.DemoFeature;
 

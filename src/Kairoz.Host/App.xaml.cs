@@ -2,6 +2,7 @@ using Kairoz.Core.Settings;
 using Kairoz.Host.Services;
 using Kairoz.Host.ViewModels;
 using Kairoz.Host.Views;
+using Kairoz.Plugins;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,7 +23,7 @@ public partial class App : Application
     {
         base.OnStartup(e);
 
-        _host = Host.CreateDefaultBuilder()
+        _host = global::Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder()
             .ConfigureAppConfiguration(static (context, configuration) =>
             {
                 configuration.SetBasePath(AppContext.BaseDirectory);
@@ -30,7 +31,7 @@ public partial class App : Application
             .ConfigureServices(ConfigureServices)
             .Build();
 
-        ApplicationThemeManager.Apply(ApplicationTheme.Dark, AccentColor.Violet);
+        ApplicationThemeManager.Apply(ApplicationTheme.Dark);
 
         await _host.StartAsync();
 

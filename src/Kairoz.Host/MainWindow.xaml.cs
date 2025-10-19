@@ -28,7 +28,7 @@ public partial class MainWindow : FluentWindow
         }
 
         _isInitialized = true;
-        RootNavigation.SelectedItem = RootNavigation.MenuItems[0];
+        RootNavigation.Navigate("0");
         NavigateTo("Home");
     }
 
