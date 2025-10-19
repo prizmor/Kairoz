@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kairoz.Host.Wpf", "Kairoz.Host.Wpf\\Kairoz.Host.Wpf.csproj", "{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kairoz.Host", "Kairoz.Host\\Kairoz.Host.csproj", "{D85EAE32-AB31-4C66-A59D-88A816E0A7C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kairoz.Core", "Kairoz.Core\\Kairoz.Core.csproj", "{2E8A0B3F-0E39-4E58-B0D5-644823C2B386}"
 EndProject
